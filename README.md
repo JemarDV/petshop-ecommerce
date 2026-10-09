@@ -1,32 +1,21 @@
-# 🐾 Tienda de Mascotas
+# 🐾 Petshop E-commerce
 
-Tienda online de accesorios para mascotas: collares, correas, camas, juguetes, comederos y más.
+E-commerce moderno de accesorios para mascotas. Proyecto académico con estándar profesional.
 
-## Características
+## Stack
 
-- Catálogo de productos con filtro por categoría
-- Carrito de compras (guardado en el navegador)
-- Diseño responsive para móvil y escritorio
+- **Frontend:** React + Vite + Tailwind CSS + React Router
+- **Backend:** Firebase (Authentication y Firestore, plan Spark)
+- **Pagos:** Stripe en modo prueba, mediante funciones serverless de Vercel (`/api`)
+- **Despliegue:** Vercel
 
-## Estructura
+## Flujo de trabajo
 
-```
-tienda-mascotas/
-├── index.html      # Página principal
-├── css/styles.css  # Estilos
-└── js/app.js       # Catálogo y carrito
-```
+- Ramas: `main` (estable/entrega) y `develop` (integración).
+- Una rama por ticket desde `develop`: `feature/PET-XXX-descripcion-corta`.
+- Pull request hacia `develop`; al cerrar una épica, `develop` → `main`.
+- Commits convencionales con el ID del ticket, ej.: `feat: grilla de productos (PET-013)`.
 
-## Uso
+## Backlog
 
-Abre `index.html` en el navegador, o sirve la carpeta con cualquier servidor estático:
-
-```bash
-npx serve .
-```
-
-## Próximos pasos
-
-- [ ] Backend y base de datos de productos
-- [ ] Pasarela de pago
-- [ ] Gestión de pedidos y usuarios
+Ver [docs/BACKLOG.md](docs/BACKLOG.md) y el tablero en GitHub Projects.
