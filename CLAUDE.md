@@ -32,8 +32,8 @@ pero debe verse y funcionar como un producto profesional. Nombre de la tienda: [
 - Issues y tablero en GitHub Projects (Backlog, To Do, In Progress, In Review, Done).
 
 ## Estado actual
-- Último ticket cerrado: ninguno.
-- Siguiente: PET-001 (repositorio, ramas y tablero Kanban).
+- Último ticket cerrado: PET-001 (repositorio, ramas y tablero Kanban).
+- Siguiente: PET-002 (proyecto base React + Vite + Tailwind).
 
 ## Backlog
 @docs/BACKLOG.md
