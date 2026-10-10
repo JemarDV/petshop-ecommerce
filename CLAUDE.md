@@ -2,7 +2,7 @@
 
 ## Qué es
 E-commerce moderno de accesorios para mascotas para un petshop. Proyecto académico,
-pero debe verse y funcionar como un producto profesional. Nombre de la tienda: [PENDIENTE].
+pero debe verse y funcionar como un producto profesional. Nombre de la tienda: PetShop.
 
 ## Stack y arquitectura (decisiones tomadas)
 - Frontend: React + Vite + Tailwind CSS, React Router.
