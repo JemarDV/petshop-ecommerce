@@ -18,4 +18,4 @@ E-commerce moderno de accesorios para mascotas. Proyecto académico con estánda
 
 ## Backlog
 
-Ver [docs/BACKLOG.md](docs/BACKLOG.md) y el tablero en GitHub Projects.
+Ver [docs/BACKLOG.md](docs/BACKLOG.md) y el [tablero Kanban](https://github.com/users/JemarDV/projects/1).
