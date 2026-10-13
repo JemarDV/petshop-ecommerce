@@ -37,8 +37,10 @@ pero debe verse y funcionar como un producto profesional. Nombre de la tienda: P
 
 ## Estado actual
 
-- Último ticket cerrado: PET-004 (estructura de carpetas y React Router v8).
-- Siguiente: PET-005 (historias de usuario y wireframes en el README).
+- Último ticket cerrado: PET-005 (historias de usuario HU-01 a HU-15 y wireframes en el README).
+- Épica 0 completa: pendiente fusionar `develop` → `main` (PR #39).
+- Siguiente: PET-006 (paleta, tipografía y tokens en Tailwind).
+- Al implementar un ticket, revisar los criterios de aceptación de su HU en el README.
 - Router: `createBrowserRouter` en `src/routes/router.jsx`; URLs en `src/routes/paths.js`.
   `RouterProvider` se importa de `react-router/dom`, el resto de `react-router`.
 - Calidad: `npm run lint` y `npm run format:check` deben pasar; los hooks de Husky
