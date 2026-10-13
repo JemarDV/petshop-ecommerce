@@ -1,0 +1,6 @@
+# Saltos de línea LF en todo el repo (evita conflictos Windows/Linux con Prettier).
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.ico binary
