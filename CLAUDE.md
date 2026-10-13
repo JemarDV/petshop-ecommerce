@@ -1,10 +1,12 @@
 # Petshop E-commerce — Contexto del proyecto
 
 ## Qué es
+
 E-commerce moderno de accesorios para mascotas para un petshop. Proyecto académico,
 pero debe verse y funcionar como un producto profesional. Nombre de la tienda: PetShop.
 
 ## Stack y arquitectura (decisiones tomadas)
+
 - Frontend: React + Vite + Tailwind CSS, React Router.
 - Firebase (plan gratuito Spark): Authentication (email y Google) + Firestore.
 - Pagos: Stripe en MODO PRUEBA, nunca dinero real. La clave secreta de Stripe
@@ -16,6 +18,7 @@ pero debe verse y funcionar como un producto profesional. Nombre de la tienda: P
 - Plan B si Stripe no permite registrar la cuenta: simulación de pago propia.
 
 ## Forma de trabajo (obligatorio)
+
 - Se avanza UN ticket a la vez, en el orden de `docs/BACKLOG.md`.
 - Soy estudiante: antes de escribir código, explica brevemente el porqué de cada
   decisión. Teoría breve + código + qué verificar. Responde siempre en español.
@@ -24,6 +27,7 @@ pero debe verse y funcionar como un producto profesional. Nombre de la tienda: P
   "Estado actual" en este archivo.
 
 ## Git
+
 - Ramas fijas: `main` (estable/entrega) y `develop` (integración).
 - Una rama por ticket desde `develop`: `feature/PET-XXX-descripcion-corta`.
 - Pull request hacia `develop`. Al terminar una épica, `develop` → `main`.
@@ -32,8 +36,12 @@ pero debe verse y funcionar como un producto profesional. Nombre de la tienda: P
 - Issues y tablero en GitHub Projects (Backlog, To Do, In Progress, In Review, Done).
 
 ## Estado actual
-- Último ticket cerrado: PET-002 (proyecto base React + Vite + Tailwind).
-- Siguiente: PET-003 (ESLint, Prettier y convención de commits).
+
+- Último ticket cerrado: PET-003 (ESLint, Prettier, Husky + commitlint + lint-staged).
+- Siguiente: PET-004 (estructura de carpetas y enrutamiento con React Router).
+- Calidad: `npm run lint` y `npm run format:check` deben pasar; los hooks de Husky
+  validan formato y mensaje de commit (`tipo: descripción (PET-XXX)`).
 
 ## Backlog
+
 @docs/BACKLOG.md
