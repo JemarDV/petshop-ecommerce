@@ -17,6 +17,36 @@ E-commerce moderno de accesorios para mascotas. Proyecto académico con estánda
 - Commits convencionales con el ID del ticket, ej.: `feat: grilla de productos (PET-013)`.
   Tipos permitidos: `feat`, `fix`, `docs`, `chore`, `style`, `refactor`, `test`.
 
+## Estructura de carpetas
+
+```
+src/
+├── components/   Piezas de UI reutilizables (Logo, botones, tarjetas…)
+├── context/      Estado global con React Context (carrito, sesión)
+├── hooks/        Hooks personalizados (useCart, useAuth…)
+├── layouts/      Estructura común de las páginas (navbar + contenido + footer)
+├── pages/        Una página por ruta (HomePage, ShopPage…)
+├── routes/       Definición de rutas (router.jsx) y URLs centralizadas (paths.js)
+├── services/     Comunicación externa (Firebase, Stripe)
+├── utils/        Funciones puras de ayuda (formato de precios, etc.)
+├── index.css     Estilos globales y Tailwind
+└── main.jsx      Punto de entrada: monta el router
+```
+
+## Rutas
+
+| URL             | Página              |
+| --------------- | ------------------- |
+| `/`             | Inicio              |
+| `/tienda`       | Catálogo            |
+| `/producto/:id` | Detalle de producto |
+| `/carrito`      | Carrito             |
+| `/login`        | Iniciar sesión      |
+| cualquier otra  | 404                 |
+
+`vercel.json` redirige todas las rutas (excepto `/api`) a `index.html` para que
+recargar una página como `/tienda` no dé 404 en producción.
+
 ## Scripts
 
 | Comando                | Qué hace                                    |
