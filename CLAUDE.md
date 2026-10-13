@@ -37,8 +37,10 @@ pero debe verse y funcionar como un producto profesional. Nombre de la tienda: P
 
 ## Estado actual
 
-- Último ticket cerrado: PET-003 (ESLint, Prettier, Husky + commitlint + lint-staged).
-- Siguiente: PET-004 (estructura de carpetas y enrutamiento con React Router).
+- Último ticket cerrado: PET-004 (estructura de carpetas y React Router v8).
+- Siguiente: PET-005 (historias de usuario y wireframes en el README).
+- Router: `createBrowserRouter` en `src/routes/router.jsx`; URLs en `src/routes/paths.js`.
+  `RouterProvider` se importa de `react-router/dom`, el resto de `react-router`.
 - Calidad: `npm run lint` y `npm run format:check` deben pasar; los hooks de Husky
   validan formato y mensaje de commit (`tipo: descripción (PET-XXX)`).
 
