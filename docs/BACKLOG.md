@@ -4,7 +4,7 @@ Prioridad: (A) alta · (M) media · (B) baja
 
 ## Épica 0 — Planificación y configuración
 - [x] PET-001 (A) Crear repositorio, ramas `main`/`develop` y tablero Kanban en GitHub
-- [ ] PET-002 (A) Proyecto base React + Vite + Tailwind
+- [x] PET-002 (A) Proyecto base React + Vite + Tailwind
 - [ ] PET-003 (M) ESLint, Prettier y convención de commits
 - [ ] PET-004 (A) Estructura de carpetas y enrutamiento (React Router)
 - [ ] PET-005 (M) Historias de usuario y wireframes en el README

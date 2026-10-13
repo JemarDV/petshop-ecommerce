@@ -2,7 +2,7 @@
 
 ## Qué es
 E-commerce moderno de accesorios para mascotas para un petshop. Proyecto académico,
-pero debe verse y funcionar como un producto profesional. Nombre de la tienda: [PENDIENTE].
+pero debe verse y funcionar como un producto profesional. Nombre de la tienda: PetShop.
 
 ## Stack y arquitectura (decisiones tomadas)
 - Frontend: React + Vite + Tailwind CSS, React Router.
@@ -32,8 +32,8 @@ pero debe verse y funcionar como un producto profesional. Nombre de la tienda: [
 - Issues y tablero en GitHub Projects (Backlog, To Do, In Progress, In Review, Done).
 
 ## Estado actual
-- Último ticket cerrado: PET-001 (repositorio, ramas y tablero Kanban).
-- Siguiente: PET-002 (proyecto base React + Vite + Tailwind).
+- Último ticket cerrado: PET-002 (proyecto base React + Vite + Tailwind).
+- Siguiente: PET-003 (ESLint, Prettier y convención de commits).
 
 ## Backlog
 @docs/BACKLOG.md
