@@ -8,7 +8,7 @@ Prioridad: (A) alta · (M) media · (B) baja
 - [x] PET-002 (A) Proyecto base React + Vite + Tailwind
 - [x] PET-003 (M) ESLint, Prettier y convención de commits
 - [x] PET-004 (A) Estructura de carpetas y enrutamiento (React Router)
-- [ ] PET-005 (M) Historias de usuario y wireframes en el README
+- [x] PET-005 (M) Historias de usuario y wireframes en el README
 
 ## Épica 1 — Sistema de diseño
 
