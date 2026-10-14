@@ -12,8 +12,8 @@ const NAV_LINKS = [
 // Navegación provisional: la Navbar responsive definitiva se construye en PET-008.
 function MainLayout() {
   return (
-    <div className="flex min-h-screen flex-col bg-slate-50 text-slate-900">
-      <header className="border-b border-slate-200 bg-white">
+    <div className="flex min-h-screen flex-col">
+      <header className="border-b border-line bg-surface">
         <nav className="mx-auto flex max-w-6xl items-center justify-between gap-4 p-4">
           <Link to={PATHS.home} className="text-2xl">
             <Logo />
@@ -26,7 +26,7 @@ function MainLayout() {
                   // `end` evita que "Inicio" quede activo en todas las rutas (todas empiezan con "/").
                   end={to === PATHS.home}
                   className={({ isActive }) =>
-                    isActive ? 'text-orange-500' : 'text-slate-600 hover:text-slate-900'
+                    isActive ? 'text-primary' : 'text-fg-muted hover:text-fg'
                   }
                 >
                   {label}
@@ -41,7 +41,7 @@ function MainLayout() {
         <Outlet />
       </main>
 
-      <footer className="border-t border-slate-200 bg-white p-4 text-center text-sm text-slate-500">
+      <footer className="border-t border-line bg-surface p-4 text-center text-sm text-fg-muted">
         © {new Date().getFullYear()} PetShop
       </footer>
 

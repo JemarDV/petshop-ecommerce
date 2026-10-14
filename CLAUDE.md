@@ -37,9 +37,12 @@ pero debe verse y funcionar como un producto profesional. Nombre de la tienda: P
 
 ## Estado actual
 
-- Último ticket cerrado: PET-005 (historias de usuario HU-01 a HU-15 y wireframes en el README).
-- Épica 0 completa: pendiente fusionar `develop` → `main` (PR #39).
-- Siguiente: PET-006 (paleta, tipografía y tokens en Tailwind).
+- Último ticket cerrado: PET-006 (tokens de diseño en `src/index.css`, guía en `/guia-estilos`).
+- Épica 0 cerrada y fusionada en `main` (PR #39).
+- Siguiente: PET-007 (componentes base: Button, Input, Badge, Card).
+- Estilos: usar SOLO tokens semánticos (`bg-primary`, `text-fg-muted`, `bg-surface`,
+  `border-line`, `text-danger`…), nunca colores de Tailwind sueltos (`orange-500`, `slate-*`).
+  `brand-500` (naranja del logo) no lleva texto blanco encima: no cumple contraste AA.
 - Al implementar un ticket, revisar los criterios de aceptación de su HU en el README.
 - Router: `createBrowserRouter` en `src/routes/router.jsx`; URLs en `src/routes/paths.js`.
   `RouterProvider` se importa de `react-router/dom`, el resto de `react-router`.

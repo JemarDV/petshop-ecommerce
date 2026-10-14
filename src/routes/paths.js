@@ -6,6 +6,7 @@ export const PATHS = {
   product: '/producto/:id',
   cart: '/carrito',
   login: '/login',
+  styleGuide: '/guia-estilos',
 }
 
 // Construye la URL de un producto concreto, ej: productPath('42') → '/producto/42'.

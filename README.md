@@ -373,10 +373,33 @@ src/
 | `/producto/:id` | Detalle de producto |
 | `/carrito`      | Carrito             |
 | `/login`        | Iniciar sesión      |
+| `/guia-estilos` | Guía de estilos     |
 | cualquier otra  | 404                 |
 
 `vercel.json` redirige todas las rutas (excepto `/api`) a `index.html` para que
 recargar una página como `/tienda` no dé 404 en producción.
+
+## Sistema de diseño
+
+Los tokens viven en `src/index.css` (bloque `@theme` de Tailwind v4) y se ven en
+[`/guia-estilos`](http://localhost:5173/guia-estilos).
+
+- **Tipografía:** Nunito (`font-display`, títulos) e Inter (`font-sans`, texto), autoalojadas
+  con Fontsource.
+- **Paleta:** `brand` (naranja), `accent` (verde azulado) e `ink` (neutros cálidos).
+- **Semánticos:** los componentes usan estos, nunca la paleta directamente.
+
+| Token                                     | Uso                                 |
+| ----------------------------------------- | ----------------------------------- |
+| `primary` / `primary-hover`               | Botones principales y enlaces       |
+| `secondary` / `secondary-hover`           | Acciones secundarias                |
+| `fg` / `fg-muted`                         | Texto principal / secundario        |
+| `canvas` / `surface` / `line`             | Fondo de página / tarjetas / bordes |
+| `success` · `warning` · `danger` · `info` | Estados, con su variante `*-soft`   |
+| `rounded-card` · `shadow-card`            | Tarjetas                            |
+
+Todos los pares de texto/fondo cumplen **WCAG AA (≥ 4,5:1)**. El naranja del logo
+(`brand-500`) se reserva para gráficos: con texto blanco encima solo alcanza 2,8:1.
 
 ## Scripts
 

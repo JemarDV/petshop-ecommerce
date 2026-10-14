@@ -1,1 +1,95 @@
 @import 'tailwindcss';
+
+/*
+ * Design tokens de PetShop.
+ * Cada variable de @theme genera clases de Tailwind: --color-brand-500 → bg-brand-500,
+ * text-brand-500, border-brand-500… La guía visual está en /guia-estilos.
+ *
+ * Regla: los componentes usan los tokens SEMÁNTICOS (primary, fg, surface, danger…),
+ * no los de paleta. Así, cambiar un color de la marca es editar una sola línea.
+ */
+@theme {
+  /* ---------- Tipografía ---------- */
+  /* Nunito: títulos y logo (redondeada, amigable). Inter: texto, precios y formularios. */
+  --font-display: 'Nunito Variable', ui-rounded, 'Segoe UI', system-ui, sans-serif;
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+
+  /* ---------- Paleta: marca (naranja) ---------- */
+  --color-brand-50: #fff7ed;
+  --color-brand-100: #ffedd5;
+  --color-brand-200: #fed7aa;
+  --color-brand-300: #fdba74;
+  --color-brand-400: #fb923c;
+  --color-brand-500: #f97316; /* naranja del logo: solo gráficos, NO texto blanco encima (2,8:1) */
+  --color-brand-600: #ea580c;
+  --color-brand-700: #c2410c;
+  --color-brand-800: #9a3412;
+  --color-brand-900: #7c2d12;
+
+  /* ---------- Paleta: acento (verde azulado) ---------- */
+  --color-accent-50: #f0fdfa;
+  --color-accent-100: #ccfbf1;
+  --color-accent-500: #14b8a6;
+  --color-accent-700: #0f766e;
+  --color-accent-800: #115e59;
+
+  /* ---------- Paleta: neutros cálidos (combinan con el naranja) ---------- */
+  --color-ink-50: #fafaf9;
+  --color-ink-100: #f5f5f4;
+  --color-ink-200: #e7e5e4;
+  --color-ink-300: #d6d3d1;
+  --color-ink-400: #a8a29e;
+  --color-ink-500: #78716c;
+  --color-ink-600: #57534e;
+  --color-ink-700: #44403c;
+  --color-ink-800: #292524;
+  --color-ink-900: #1c1917;
+
+  /* ---------- Semánticos: superficies y texto ---------- */
+  --color-canvas: #fffbf5; /* fondo de la página */
+  --color-surface: #ffffff; /* tarjetas, navbar, modales */
+  --color-line: var(--color-ink-200); /* bordes y separadores */
+  --color-fg: var(--color-ink-900); /* texto principal (17:1) */
+  --color-fg-muted: var(--color-ink-600); /* texto secundario (7,4:1) */
+
+  /* ---------- Semánticos: acciones ---------- */
+  --color-primary: var(--color-brand-700); /* botones y enlaces: blanco encima 5,2:1 */
+  --color-primary-hover: var(--color-brand-800);
+  --color-primary-soft: var(--color-brand-100);
+  --color-secondary: var(--color-accent-700);
+  --color-secondary-hover: var(--color-accent-800);
+  --color-secondary-soft: var(--color-accent-100);
+
+  /* ---------- Semánticos: estados (texto sobre su fondo *-soft ≥ 4,5:1) ---------- */
+  --color-success: #15803d;
+  --color-success-soft: #f0fdf4;
+  --color-warning: #b45309;
+  --color-warning-soft: #fffbeb;
+  --color-danger: #b91c1c;
+  --color-danger-soft: #fef2f2;
+  --color-info: #1d4ed8;
+  --color-info-soft: #eff6ff;
+
+  /* ---------- Formas y profundidad ---------- */
+  --radius-card: 1rem;
+  --shadow-card: 0 1px 2px rgb(28 25 23 / 0.06), 0 4px 12px rgb(28 25 23 / 0.06);
+  --shadow-card-hover: 0 2px 4px rgb(28 25 23 / 0.08), 0 12px 24px rgb(28 25 23 / 0.1);
+}
+
+@layer base {
+  body {
+    @apply bg-canvas font-sans text-fg antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display font-extrabold tracking-tight;
+  }
+
+  /* Foco visible al navegar con teclado (accesibilidad), sin afectar clics con el mouse. */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-primary;
+  }
+}
