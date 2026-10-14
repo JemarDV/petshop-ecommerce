@@ -13,7 +13,7 @@ Prioridad: (A) alta · (M) media · (B) baja
 ## Épica 1 — Sistema de diseño
 
 - [x] PET-006 (A) Paleta, tipografía y tokens en Tailwind
-- [ ] PET-007 (A) Componentes base: Button, Input, Badge, Card
+- [x] PET-007 (A) Componentes base: Button, Input, Badge, Card
 - [ ] PET-008 (A) Layout: Navbar responsive y Footer
 
 ## Épica 2 — Firebase y datos

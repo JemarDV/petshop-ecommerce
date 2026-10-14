@@ -37,9 +37,12 @@ pero debe verse y funcionar como un producto profesional. Nombre de la tienda: P
 
 ## Estado actual
 
-- Último ticket cerrado: PET-006 (tokens de diseño en `src/index.css`, guía en `/guia-estilos`).
-- Épica 0 cerrada y fusionada en `main` (PR #39).
-- Siguiente: PET-007 (componentes base: Button, Input, Badge, Card).
+- Último ticket cerrado: PET-007 (componentes base en `src/components/ui/`, demo en `/guia-estilos`).
+- Épica 0 cerrada y fusionada en `main` (PR #39). PET-006 fusionado en `develop` (PR #44).
+- Siguiente: PET-008 (Navbar responsive y Footer); con él cierra la Épica 1 → `develop` a `main`.
+- UI: reutilizar `Button`, `Input`, `Badge`, `Card` (+ `CardHeader/Body/Footer`) desde
+  `src/components/ui`; unir clases con `cn()` de `src/utils/cn.js`. Bordes de inputs con
+  `border-line-strong` (≥ 3:1), `border-line` solo para separadores decorativos.
 - Estilos: usar SOLO tokens semánticos (`bg-primary`, `text-fg-muted`, `bg-surface`,
   `border-line`, `text-danger`…), nunca colores de Tailwind sueltos (`orange-500`, `slate-*`).
   `brand-500` (naranja del logo) no lleva texto blanco encima: no cumple contraste AA.
