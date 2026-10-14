@@ -48,7 +48,8 @@
   /* ---------- Semánticos: superficies y texto ---------- */
   --color-canvas: #fffbf5; /* fondo de la página */
   --color-surface: #ffffff; /* tarjetas, navbar, modales */
-  --color-line: var(--color-ink-200); /* bordes y separadores */
+  --color-line: var(--color-ink-200); /* bordes y separadores decorativos */
+  --color-line-strong: var(--color-ink-500); /* bordes de inputs: ≥ 3:1 exigido por WCAG (4,8:1) */
   --color-fg: var(--color-ink-900); /* texto principal (17:1) */
   --color-fg-muted: var(--color-ink-600); /* texto secundario (7,4:1) */
 
