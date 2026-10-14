@@ -10,10 +10,10 @@ function ErrorPage() {
     : 'Ocurrió un error inesperado.'
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center gap-3 bg-slate-50 p-6 text-center">
-      <h1 className="text-2xl font-bold text-slate-900">Algo salió mal</h1>
-      <p className="text-slate-600">{message}</p>
-      <Link to={PATHS.home} className="text-orange-500 underline">
+    <main className="flex min-h-screen flex-col items-center justify-center gap-3 bg-canvas p-6 text-center">
+      <h1 className="text-2xl font-bold">Algo salió mal</h1>
+      <p className="text-fg-muted">{message}</p>
+      <Link to={PATHS.home} className="text-primary underline hover:text-primary-hover">
         Volver al inicio
       </Link>
     </main>

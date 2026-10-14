@@ -4,7 +4,7 @@ function PagePlaceholder({ title, ticket, children }) {
     <section className="py-12 text-center">
       <h1 className="text-3xl font-bold">{title}</h1>
       {children}
-      {ticket && <p className="mt-4 text-sm text-slate-500">Próximamente ({ticket})</p>}
+      {ticket && <p className="mt-4 text-sm text-fg-muted">Próximamente ({ticket})</p>}
     </section>
   )
 }

@@ -7,7 +7,7 @@ function ProductDetailPage() {
 
   return (
     <PagePlaceholder title="Detalle de producto" ticket="PET-016">
-      <p className="mt-2 text-slate-600">
+      <p className="mt-2 text-fg-muted">
         ID del producto: <code className="font-mono">{id}</code>
       </p>
     </PagePlaceholder>

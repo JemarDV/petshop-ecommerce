@@ -7,6 +7,7 @@ import LoginPage from '../pages/LoginPage.jsx'
 import NotFoundPage from '../pages/NotFoundPage.jsx'
 import ProductDetailPage from '../pages/ProductDetailPage.jsx'
 import ShopPage from '../pages/ShopPage.jsx'
+import StyleGuidePage from '../pages/StyleGuidePage.jsx'
 import { PATHS } from './paths.js'
 
 // Todas las páginas cuelgan de MainLayout, que pinta la navegación y el footer
@@ -22,6 +23,8 @@ export const router = createBrowserRouter([
       { path: PATHS.product, element: <ProductDetailPage /> },
       { path: PATHS.cart, element: <CartPage /> },
       { path: PATHS.login, element: <LoginPage /> },
+      // Página interna de referencia (no aparece en la navegación).
+      { path: PATHS.styleGuide, element: <StyleGuidePage /> },
       // `*` atrapa cualquier URL que no coincida con las anteriores.
       { path: '*', element: <NotFoundPage /> },
     ],

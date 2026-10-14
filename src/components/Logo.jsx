@@ -4,7 +4,7 @@ function Logo({ className = '', showText = true }) {
   return (
     <span className={`inline-flex items-center gap-2 font-extrabold tracking-tight ${className}`}>
       <svg viewBox="0 0 64 64" className="h-[1.6em] w-[1.6em] shrink-0" aria-hidden="true">
-        <rect width="64" height="64" rx="16" className="fill-orange-500" />
+        <rect width="64" height="64" rx="16" className="fill-brand-500" />
         <g className="fill-white">
           <ellipse cx="18.5" cy="28" rx="4.6" ry="6" transform="rotate(-25 18.5 28)" />
           <ellipse cx="26.5" cy="18.5" rx="4.8" ry="6.4" transform="rotate(-8 26.5 18.5)" />
@@ -15,8 +15,8 @@ function Logo({ className = '', showText = true }) {
       </svg>
       {showText && (
         <span>
-          <span className="text-slate-900">Pet</span>
-          <span className="text-orange-500">Shop</span>
+          <span className="text-fg">Pet</span>
+          <span className="text-brand-500">Shop</span>
         </span>
       )}
       {!showText && <span className="sr-only">PetShop</span>}

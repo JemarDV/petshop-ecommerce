@@ -8,10 +8,10 @@ function HomePage() {
       <h1 className="text-5xl">
         <Logo />
       </h1>
-      <p className="text-slate-600">Todo para tu mascota, en un solo lugar 🐾</p>
+      <p className="text-fg-muted">Todo para tu mascota, en un solo lugar 🐾</p>
       <Link
         to={PATHS.shop}
-        className="rounded-lg bg-orange-500 px-5 py-2 font-semibold text-white hover:bg-orange-600"
+        className="rounded-lg bg-primary px-5 py-2 font-semibold text-white hover:bg-primary-hover"
       >
         Ver la tienda
       </Link>
